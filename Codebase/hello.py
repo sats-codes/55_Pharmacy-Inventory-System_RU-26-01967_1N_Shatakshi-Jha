@@ -11,7 +11,6 @@ def initialize_file():
             writer.writerow(["ID", "Name", "Quantity", "Price"])
 
 def load_medicines():
-    """Loads medicines from medicines.csv into a list of dictionaries."""
     initialize_file()
     medicines = []
     with open(FILENAME, mode="r", newline="") as file:
